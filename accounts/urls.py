@@ -15,7 +15,9 @@ app_name = 'accounts'
 
 # Setup a router for the viewsets
 router = SimpleRouter()
+
 router.register('users', accounts_views.UserViewSet)
+router.register('groups', accounts_views.GroupViewSet)
 
 
 class AccountRootView(APIView):
@@ -31,6 +33,7 @@ class AccountRootView(APIView):
 		"""
 		routes = {
 			'users': reverse('accounts:user-list', request=request),
+			'groups': reverse('accounts:group-list', request=request),
 			'obtain-auth-token': reverse('accounts:obtain-auth-token', request=request)
 		}
 
@@ -41,7 +44,7 @@ accounts_root_view = AccountRootView.as_view()
 
 # Define the url patterns
 urlpatterns = [
-	path('', accounts_root_view, name='account-root'),
 	path('', include(router.urls)),
+	path('', accounts_root_view, name='account-root'),
 	path('obtain-auth-token', authtoken_views.obtain_auth_token, name='obtain-auth-token')
 ]

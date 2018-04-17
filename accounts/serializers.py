@@ -14,3 +14,12 @@ class UserSerializer(serializers.ModelSerializer):
 			'is_active',
 			'is_staff'
 		)
+
+
+class GroupSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = auth_models.Group
+		fields = (
+			'id',
+			'name'
+		)
