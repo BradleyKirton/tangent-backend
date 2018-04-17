@@ -14,7 +14,7 @@ class EmployeeProfileSerializer(serializers.ModelSerializer):
 			'email',
 			'github_user',
 			'birth_date',
-			'year_started',
+			'date_started',
 			'gender',
 			'race',
 			'age',

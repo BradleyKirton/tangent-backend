@@ -30,7 +30,7 @@ class EmployeeProfile(models.Model):
     email = models.EmailField(null=True)
     github_user = models.CharField(max_length=255, null=True)
     birth_date = models.DateField(null=True)
-    year_started = models.DateField(auto_now_add=True, null=True)
+    date_started = models.DateField(auto_now_add=True, null=True)
     gender = models.CharField(max_length=1, choices=GENDER_TYPES, null=True)
     race = models.CharField(max_length=1, choices=RACE_TYPES, null=True)
     
@@ -39,12 +39,12 @@ class EmployeeProfile(models.Model):
         if self.birth_date is None:
             return
 
-        delta = datetime.datetime.now() - self.birth_date
+        delta = datetime.date.today() - self.birth_date
         return delta.days // 365
 
     @property
     def years_worked(self) -> int:
-        delta = datetime.datetime.now() - self.year_started
+        delta = datetime.date.now() - self.date_started
         return delta.days // 365
         
 
@@ -53,7 +53,7 @@ class EmployeeProfile(models.Model):
         if self.birth_date is None:
             return
 
-        now = datetime.datetime.now()
+        now = datetime.date.now()
         this_years_bday = self.birth_date.replace(year=now.year)
 
         if self.birth_date.month < now.month:
