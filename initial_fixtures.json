@@ -1,0 +1,551 @@
+[{
+  "id": 1,
+  "username": "lhillan0",
+  "first_name": "Linet",
+  "last_name": "Hillan",
+  "email": "lhillan0@paypal.com",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 1,
+    "phone_number": "850 970 2358",
+    "email": "lhillan0@people.com.cn",
+    "github_user": "lhillan0",
+    "birth_date": "1995-04-01",
+    "gender": "F",
+    "race": "W",
+    "position": {
+      "id": 1,
+      "name": "Front-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 2,
+  "username": "mscamadin1",
+  "first_name": "Marne",
+  "last_name": "Scamadin",
+  "email": "mscamadin1@g.co",
+  "is_active": false,
+  "is_staff": false,
+  "profile": {
+    "id": 2,
+    "phone_number": "976 549 8420",
+    "email": "mscamadin1@nyu.edu",
+    "github_user": "mscamadin1",
+    "birth_date": "1997-01-12",
+    "gender": "F",
+    "race": "I",
+    "position": {
+      "id": 2,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 3,
+  "username": "ejone2",
+  "first_name": "Elmer",
+  "last_name": "Jone",
+  "email": "ejone2@4shared.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 3,
+    "phone_number": "149 392 4018",
+    "email": "ejone2@redcross.org",
+    "github_user": "ejone2",
+    "birth_date": "1985-10-11",
+    "gender": "M",
+    "race": "C",
+    "position": {
+      "id": 3,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 4,
+  "username": "jcausbey3",
+  "first_name": "Joya",
+  "last_name": "Causbey",
+  "email": "jcausbey3@uiuc.edu",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 4,
+    "phone_number": "727 588 5947",
+    "email": "jcausbey3@princeton.edu",
+    "github_user": "jcausbey3",
+    "birth_date": "1929-05-21",
+    "gender": "F",
+    "race": "N",
+    "position": {
+      "id": 4,
+      "name": "Back-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 5,
+  "username": "cviggers4",
+  "first_name": "Celie",
+  "last_name": "Viggers",
+  "email": "cviggers4@live.com",
+  "is_active": false,
+  "is_staff": false,
+  "profile": {
+    "id": 5,
+    "phone_number": "356 517 1092",
+    "email": "cviggers4@europa.eu",
+    "github_user": "cviggers4",
+    "birth_date": "1997-01-21",
+    "gender": "F",
+    "race": "B",
+    "position": {
+      "id": 5,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 6,
+  "username": "sadolf5",
+  "first_name": "Shurwood",
+  "last_name": "Adolf",
+  "email": "sadolf5@yandex.ru",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 6,
+    "phone_number": "827 425 5238",
+    "email": "sadolf5@wikia.com",
+    "github_user": "sadolf5",
+    "birth_date": "1990-04-23",
+    "gender": "M",
+    "race": "N",
+    "position": {
+      "id": 6,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 7,
+  "username": "fworsalls6",
+  "first_name": "Fraser",
+  "last_name": "Worsalls",
+  "email": "fworsalls6@bizjournals.com",
+  "is_active": false,
+  "is_staff": true,
+  "profile": {
+    "id": 7,
+    "phone_number": "516 814 3208",
+    "email": "fworsalls6@patch.com",
+    "github_user": "fworsalls6",
+    "birth_date": "1969-03-08",
+    "gender": "M",
+    "race": "N",
+    "position": {
+      "id": 7,
+      "name": "Front-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 8,
+  "username": "lhentzer7",
+  "first_name": "Lissi",
+  "last_name": "Hentzer",
+  "email": "lhentzer7@xrea.com",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 8,
+    "phone_number": "982 358 5645",
+    "email": "lhentzer7@state.tx.us",
+    "github_user": "lhentzer7",
+    "birth_date": "1903-09-21",
+    "gender": "F",
+    "race": "N",
+    "position": {
+      "id": 8,
+      "name": "Back-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 9,
+  "username": "oferrao8",
+  "first_name": "Olenolin",
+  "last_name": "Ferrao",
+  "email": "oferrao8@comcast.net",
+  "is_active": false,
+  "is_staff": true,
+  "profile": {
+    "id": 9,
+    "phone_number": "906 650 8595",
+    "email": "oferrao8@redcross.org",
+    "github_user": "oferrao8",
+    "birth_date": "1966-01-09",
+    "gender": "M",
+    "race": "I",
+    "position": {
+      "id": 9,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 10,
+  "username": "bbatchelar9",
+  "first_name": "Binni",
+  "last_name": "Batchelar",
+  "email": "bbatchelar9@tinyurl.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 10,
+    "phone_number": "203 393 3176",
+    "email": "bbatchelar9@ask.com",
+    "github_user": "bbatchelar9",
+    "birth_date": "2001-01-27",
+    "gender": "F",
+    "race": "N",
+    "position": {
+      "id": 10,
+      "name": "Front-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 11,
+  "username": "jsoutena",
+  "first_name": "Jermayne",
+  "last_name": "Souten",
+  "email": "jsoutena@t-online.de",
+  "is_active": false,
+  "is_staff": false,
+  "profile": {
+    "id": 11,
+    "phone_number": "406 203 9971",
+    "email": "jsoutena@springer.com",
+    "github_user": "jsoutena",
+    "birth_date": "1937-07-05",
+    "gender": "M",
+    "race": "B",
+    "position": {
+      "id": 11,
+      "name": "Back-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 12,
+  "username": "ecourtmanb",
+  "first_name": "Ermina",
+  "last_name": "Courtman",
+  "email": "ecourtmanb@yale.edu",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 12,
+    "phone_number": "487 352 1175",
+    "email": "ecourtmanb@npr.org",
+    "github_user": "ecourtmanb",
+    "birth_date": "1985-07-28",
+    "gender": "F",
+    "race": "I",
+    "position": {
+      "id": 12,
+      "name": "Front-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 13,
+  "username": "adodsleyc",
+  "first_name": "Alfy",
+  "last_name": "Dodsley",
+  "email": "adodsleyc@furl.net",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 13,
+    "phone_number": "659 385 1555",
+    "email": "adodsleyc@hexun.com",
+    "github_user": "adodsleyc",
+    "birth_date": "1933-04-22",
+    "gender": "F",
+    "race": "N",
+    "position": {
+      "id": 13,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 14,
+  "username": "seliad",
+  "first_name": "Shelden",
+  "last_name": "Elia",
+  "email": "seliad@time.com",
+  "is_active": false,
+  "is_staff": true,
+  "profile": {
+    "id": 14,
+    "phone_number": "293 260 4199",
+    "email": "seliad@sun.com",
+    "github_user": "seliad",
+    "birth_date": "1916-12-27",
+    "gender": "M",
+    "race": "W",
+    "position": {
+      "id": 14,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 15,
+  "username": "rautone",
+  "first_name": "Raleigh",
+  "last_name": "Auton",
+  "email": "rautone@huffingtonpost.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 15,
+    "phone_number": "135 747 4681",
+    "email": "rautone@telegraph.co.uk",
+    "github_user": "rautone",
+    "birth_date": "1978-12-27",
+    "gender": "M",
+    "race": "I",
+    "position": {
+      "id": 15,
+      "name": "Back-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 16,
+  "username": "alilburnef",
+  "first_name": "Anatollo",
+  "last_name": "Lilburne",
+  "email": "alilburnef@purevolume.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 16,
+    "phone_number": "204 245 2747",
+    "email": "alilburnef@rambler.ru",
+    "github_user": "alilburnef",
+    "birth_date": "1925-12-22",
+    "gender": "M",
+    "race": "B",
+    "position": {
+      "id": 16,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 17,
+  "username": "ginottg",
+  "first_name": "Gherardo",
+  "last_name": "Inott",
+  "email": "ginottg@house.gov",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 17,
+    "phone_number": "296 909 5987",
+    "email": "ginottg@wordpress.com",
+    "github_user": "ginottg",
+    "birth_date": "1976-08-31",
+    "gender": "M",
+    "race": "W",
+    "position": {
+      "id": 17,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 18,
+  "username": "eonearyh",
+  "first_name": "Elyse",
+  "last_name": "O'Neary",
+  "email": "eonearyh@geocities.jp",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 18,
+    "phone_number": "390 616 3921",
+    "email": "eonearyh@aol.com",
+    "github_user": "eonearyh",
+    "birth_date": "1930-11-22",
+    "gender": "F",
+    "race": "I",
+    "position": {
+      "id": 18,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 19,
+  "username": "vbucheri",
+  "first_name": "Valry",
+  "last_name": "Bucher",
+  "email": "vbucheri@weather.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 19,
+    "phone_number": "255 436 1973",
+    "email": "vbucheri@craigslist.org",
+    "github_user": "vbucheri",
+    "birth_date": "1951-06-21",
+    "gender": "F",
+    "race": "W",
+    "position": {
+      "id": 19,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 20,
+  "username": "dnoyesj",
+  "first_name": "Donnie",
+  "last_name": "Noyes",
+  "email": "dnoyesj@zdnet.com",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 20,
+    "phone_number": "882 807 4713",
+    "email": "dnoyesj@unblog.fr",
+    "github_user": "dnoyesj",
+    "birth_date": "1952-11-29",
+    "gender": "M",
+    "race": "I",
+    "position": {
+      "id": 20,
+      "name": "Front-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 21,
+  "username": "zsisselk",
+  "first_name": "Zita",
+  "last_name": "Sissel",
+  "email": "zsisselk@flickr.com",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 21,
+    "phone_number": "458 604 3349",
+    "email": "zsisselk@state.tx.us",
+    "github_user": "zsisselk",
+    "birth_date": "1970-02-24",
+    "gender": "F",
+    "race": "B",
+    "position": {
+      "id": 21,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 22,
+  "username": "csauvenl",
+  "first_name": "Chrissy",
+  "last_name": "Sauven",
+  "email": "csauvenl@netscape.com",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 22,
+    "phone_number": "272 647 8353",
+    "email": "csauvenl@linkedin.com",
+    "github_user": "csauvenl",
+    "birth_date": "1908-08-29",
+    "gender": "F",
+    "race": "C",
+    "position": {
+      "id": 22,
+      "name": "Front-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 23,
+  "username": "araffanm",
+  "first_name": "Ashlin",
+  "last_name": "Raffan",
+  "email": "araffanm@imageshack.us",
+  "is_active": true,
+  "is_staff": true,
+  "profile": {
+    "id": 23,
+    "phone_number": "669 566 8287",
+    "email": "araffanm@netvibes.com",
+    "github_user": "araffanm",
+    "birth_date": "1957-04-08",
+    "gender": "M",
+    "race": "I",
+    "position": {
+      "id": 23,
+      "name": "Back-end Developer",
+      "level": "Senior"
+    }
+  }
+}, {
+  "id": 24,
+  "username": "lworvelln",
+  "first_name": "Lorette",
+  "last_name": "Worvell",
+  "email": "lworvelln@twitter.com",
+  "is_active": true,
+  "is_staff": false,
+  "profile": {
+    "id": 24,
+    "phone_number": "592 751 5132",
+    "email": "lworvelln@ning.com",
+    "github_user": "lworvelln",
+    "birth_date": "1963-05-05",
+    "gender": "F",
+    "race": "W",
+    "position": {
+      "id": 24,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}, {
+  "id": 25,
+  "username": "rrubinfeldo",
+  "first_name": "Rosabel",
+  "last_name": "Rubinfeld",
+  "email": "rrubinfeldo@sphinn.com",
+  "is_active": false,
+  "is_staff": true,
+  "profile": {
+    "id": 25,
+    "phone_number": "302 595 9881",
+    "email": "rrubinfeldo@ocn.ne.jp",
+    "github_user": "rrubinfeldo",
+    "birth_date": "1968-07-12",
+    "gender": "F",
+    "race": "I",
+    "position": {
+      "id": 25,
+      "name": "Back-end Developer",
+      "level": "Junior"
+    }
+  }
+}]
