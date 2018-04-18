@@ -6,7 +6,8 @@ from employees import models as employee_models
 
 @receiver(signals.post_save, sender=auth_models.User)
 def post_user_save(sender: object, instance: auth_models.User, created: bool, **kwargs) -> None:
-	"""The employee instance is automatically created on the creation of the user instance
+	"""The employee and an initial position instance are automatically 
+	created on the creation of the user instance
 
 	Args:
 	    sender: The user model class
@@ -16,4 +17,5 @@ def post_user_save(sender: object, instance: auth_models.User, created: bool, **
 	if not created:
 		return
 
-	employee_models.EmployeeProfile.objects.create(user=instance)
+	employee_models.Profile.objects.create(user=instance)
+	employee_models.Position.objects.create(user=instance)

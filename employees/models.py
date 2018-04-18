@@ -5,7 +5,7 @@ from django.contrib.auth import models as auth_models
 
 
 
-class EmployeeProfile(models.Model):
+class Profile(models.Model):
     GENDER_TYPES = (
         ('M', 'Male'),
         ('F', 'Female')
@@ -61,3 +61,22 @@ class EmployeeProfile(models.Model):
         
         delta = now - this_years_bday
         return delta.days
+
+
+class Position(models.Model):
+    user = models.ForeignKey(auth_models.User, on_delete=models.SET_NULL, related_name='positions', null=True)
+    name = models.CharField(max_length=10, null=True)
+    level = models.CharField(max_length=10, null=True)
+
+    @property
+    def is_current(self) -> bool:
+        """We define the current position as the most recent database entry
+        for the user. This is a simple mechanism and could be enhanced with proper versioning
+        """
+        positions = (Position
+                        .objects
+                        .filter(pk=self.pk)
+                        .order_by('-id')
+                    )
+        
+        return self == positions.first()

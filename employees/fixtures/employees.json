@@ -1,0 +1,591 @@
+[
+{
+   "model": "employees.profile",
+   "pk": 1,
+   "fields": {
+      "user": 2,
+      "phone_number": null,
+      "email": null,
+      "github_user": null,
+      "birth_date": null,
+      "date_started": "2018-04-17",
+      "gender": null,
+      "race": null
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 6,
+   "fields": {
+      "user": 7,
+      "phone_number": "850 970 2358",
+      "email": "lhillan0@people.com.cn",
+      "github_user": "lhillan0",
+      "birth_date": "1995-04-01",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "W"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 7,
+   "fields": {
+      "user": 8,
+      "phone_number": "976 549 8420",
+      "email": "mscamadin1@nyu.edu",
+      "github_user": "mscamadin1",
+      "birth_date": "1997-01-12",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 8,
+   "fields": {
+      "user": 9,
+      "phone_number": "149 392 4018",
+      "email": "ejone2@redcross.org",
+      "github_user": "ejone2",
+      "birth_date": "1985-10-11",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "C"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 9,
+   "fields": {
+      "user": 10,
+      "phone_number": "727 588 5947",
+      "email": "jcausbey3@princeton.edu",
+      "github_user": "jcausbey3",
+      "birth_date": "1929-05-21",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 10,
+   "fields": {
+      "user": 11,
+      "phone_number": "356 517 1092",
+      "email": "cviggers4@europa.eu",
+      "github_user": "cviggers4",
+      "birth_date": "1997-01-21",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "B"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 11,
+   "fields": {
+      "user": 12,
+      "phone_number": "827 425 5238",
+      "email": "sadolf5@wikia.com",
+      "github_user": "sadolf5",
+      "birth_date": "1990-04-23",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 12,
+   "fields": {
+      "user": 13,
+      "phone_number": "516 814 3208",
+      "email": "fworsalls6@patch.com",
+      "github_user": "fworsalls6",
+      "birth_date": "1969-03-08",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 13,
+   "fields": {
+      "user": 14,
+      "phone_number": "982 358 5645",
+      "email": "lhentzer7@state.tx.us",
+      "github_user": "lhentzer7",
+      "birth_date": "1903-09-21",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 14,
+   "fields": {
+      "user": 15,
+      "phone_number": "906 650 8595",
+      "email": "oferrao8@redcross.org",
+      "github_user": "oferrao8",
+      "birth_date": "1966-01-09",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 15,
+   "fields": {
+      "user": 16,
+      "phone_number": "203 393 3176",
+      "email": "bbatchelar9@ask.com",
+      "github_user": "bbatchelar9",
+      "birth_date": "2001-01-27",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 16,
+   "fields": {
+      "user": 17,
+      "phone_number": "406 203 9971",
+      "email": "jsoutena@springer.com",
+      "github_user": "jsoutena",
+      "birth_date": "1937-07-05",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "B"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 17,
+   "fields": {
+      "user": 18,
+      "phone_number": "487 352 1175",
+      "email": "ecourtmanb@npr.org",
+      "github_user": "ecourtmanb",
+      "birth_date": "1985-07-28",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 18,
+   "fields": {
+      "user": 19,
+      "phone_number": "659 385 1555",
+      "email": "adodsleyc@hexun.com",
+      "github_user": "adodsleyc",
+      "birth_date": "1933-04-22",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "N"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 19,
+   "fields": {
+      "user": 20,
+      "phone_number": "293 260 4199",
+      "email": "seliad@sun.com",
+      "github_user": "seliad",
+      "birth_date": "1916-12-27",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "W"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 20,
+   "fields": {
+      "user": 21,
+      "phone_number": "135 747 4681",
+      "email": "rautone@telegraph.co.uk",
+      "github_user": "rautone",
+      "birth_date": "1978-12-27",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 21,
+   "fields": {
+      "user": 22,
+      "phone_number": "204 245 2747",
+      "email": "alilburnef@rambler.ru",
+      "github_user": "alilburnef",
+      "birth_date": "1925-12-22",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "B"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 22,
+   "fields": {
+      "user": 23,
+      "phone_number": "296 909 5987",
+      "email": "ginottg@wordpress.com",
+      "github_user": "ginottg",
+      "birth_date": "1976-08-31",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "W"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 23,
+   "fields": {
+      "user": 24,
+      "phone_number": "390 616 3921",
+      "email": "eonearyh@aol.com",
+      "github_user": "eonearyh",
+      "birth_date": "1930-11-22",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 24,
+   "fields": {
+      "user": 25,
+      "phone_number": "255 436 1973",
+      "email": "vbucheri@craigslist.org",
+      "github_user": "vbucheri",
+      "birth_date": "1951-06-21",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "W"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 25,
+   "fields": {
+      "user": 26,
+      "phone_number": "882 807 4713",
+      "email": "dnoyesj@unblog.fr",
+      "github_user": "dnoyesj",
+      "birth_date": "1952-11-29",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 26,
+   "fields": {
+      "user": 27,
+      "phone_number": "458 604 3349",
+      "email": "zsisselk@state.tx.us",
+      "github_user": "zsisselk",
+      "birth_date": "1970-02-24",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "B"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 27,
+   "fields": {
+      "user": 28,
+      "phone_number": "272 647 8353",
+      "email": "csauvenl@linkedin.com",
+      "github_user": "csauvenl",
+      "birth_date": "1908-08-29",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "C"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 28,
+   "fields": {
+      "user": 29,
+      "phone_number": "669 566 8287",
+      "email": "araffanm@netvibes.com",
+      "github_user": "araffanm",
+      "birth_date": "1957-04-08",
+      "date_started": "2018-04-18",
+      "gender": "M",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 29,
+   "fields": {
+      "user": 30,
+      "phone_number": "592 751 5132",
+      "email": "lworvelln@ning.com",
+      "github_user": "lworvelln",
+      "birth_date": "1963-05-05",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "W"
+   }
+},
+{
+   "model": "employees.profile",
+   "pk": 30,
+   "fields": {
+      "user": 31,
+      "phone_number": "302 595 9881",
+      "email": "rrubinfeldo@ocn.ne.jp",
+      "github_user": "rrubinfeldo",
+      "birth_date": "1968-07-12",
+      "date_started": "2018-04-18",
+      "gender": "F",
+      "race": "I"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 2,
+   "fields": {
+      "user": 7,
+      "name": "Front-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 3,
+   "fields": {
+      "user": 8,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 4,
+   "fields": {
+      "user": 9,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 5,
+   "fields": {
+      "user": 10,
+      "name": "Back-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 6,
+   "fields": {
+      "user": 11,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 7,
+   "fields": {
+      "user": 12,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 8,
+   "fields": {
+      "user": 13,
+      "name": "Front-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 9,
+   "fields": {
+      "user": 14,
+      "name": "Back-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 10,
+   "fields": {
+      "user": 15,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 11,
+   "fields": {
+      "user": 16,
+      "name": "Front-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 12,
+   "fields": {
+      "user": 17,
+      "name": "Back-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 13,
+   "fields": {
+      "user": 18,
+      "name": "Front-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 14,
+   "fields": {
+      "user": 19,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 15,
+   "fields": {
+      "user": 20,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 16,
+   "fields": {
+      "user": 21,
+      "name": "Back-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 17,
+   "fields": {
+      "user": 22,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 18,
+   "fields": {
+      "user": 23,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 19,
+   "fields": {
+      "user": 24,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 20,
+   "fields": {
+      "user": 25,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 21,
+   "fields": {
+      "user": 26,
+      "name": "Front-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 22,
+   "fields": {
+      "user": 27,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 23,
+   "fields": {
+      "user": 28,
+      "name": "Front-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 24,
+   "fields": {
+      "user": 29,
+      "name": "Back-end Developer",
+      "level": "Senior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 25,
+   "fields": {
+      "user": 30,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+},
+{
+   "model": "employees.position",
+   "pk": 26,
+   "fields": {
+      "user": 31,
+      "name": "Back-end Developer",
+      "level": "Junior"
+   }
+}
+]

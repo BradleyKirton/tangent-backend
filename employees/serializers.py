@@ -3,12 +3,24 @@ from employees import models as employee_models
 from accounts import serializers as account_serializers
 
 
-class EmployeeProfileSerializer(serializers.ModelSerializer):
+class PositionSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = employee_models.Position
+		fields = (
+			'id',
+			'name',
+			'level'
+		)
+
+
+class ProfileSerializer(serializers.ModelSerializer):
 	user = account_serializers.UserSerializer(read_only=True)
+	positions = PositionSerializer(many=True, read_only=True, source='user.positions')
 
 	class Meta:
-		model = employee_models.EmployeeProfile
+		model = employee_models.Profile
 		fields = (
+			'id',
 			'user',
 			'phone_number',
 			'email',
@@ -19,5 +31,6 @@ class EmployeeProfileSerializer(serializers.ModelSerializer):
 			'race',
 			'age',
 			'years_worked',
-			'days_to_birthday'
+			'days_to_birthday',
+			'positions'
 		)
