@@ -27,6 +27,11 @@ class Position(models.Model):
     level = models.CharField(max_length=10, null=True, choices=LEVEL_TYPES)
     market_salary = models.FloatField(null=True)
 
+    class Meta:
+        unique_together = (
+            ('name', 'level'),
+        )
+
     def __str__(self) -> str:
         return f"{self.name} - {self.level}"
 
@@ -115,10 +120,10 @@ class Review(models.Model):
 
 
 class PositionHistory(models.Model):
-    employee = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
+    profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True)
     date_started = models.DateField(auto_now_add=True)
     review = models.ManyToManyField(Review)
 
     def __str__(self) -> str:
-        return f"{self.employee.user.username} {self.position.name}"
+        return f"{self.profile.user.username} {self.position.name}"
