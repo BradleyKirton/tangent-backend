@@ -9,7 +9,8 @@ class PositionSerializer(serializers.ModelSerializer):
 		fields = (
 			'id',
 			'name',
-			'level'
+			'level',
+			'is_current'
 		)
 
 
