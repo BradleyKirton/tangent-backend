@@ -122,8 +122,8 @@ class Review(models.Model):
 class PositionHistory(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True)
-    date_started = models.DateField(auto_now_add=True)
     review = models.ManyToManyField(Review)
+    date_started = models.DateField(auto_now_add=True)
 
     def __str__(self) -> str:
         return f"{self.profile.user.username} {self.position.name}"
@@ -133,9 +133,9 @@ class PositionHistory(models.Model):
         """We define the current position as the most recent database entry
         for the user. This is a simple mechanism and could be enhanced with proper versioning
         """
-        positions = (Position
+        positions = (PositionHistory
                         .objects
-                        .filter(pk=self.pk)
+                        .filter(profile=self.profile)
                         .order_by('-id')
                     )
         

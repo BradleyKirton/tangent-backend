@@ -15,9 +15,10 @@ app_name = 'employees'
 # Setup a router for the viewsets
 router = DefaultRouter()
 
-router.register('profiles', employee_views.ProfileViewSet)
-router.register('positions', employee_views.PositionViewSet)
-router.register('position_history', employee_views.PositionHistoryViewSet, base_name='position-history')
+router.register('profiles', employee_views.ProfileViewSet, base_name='profile')
+router.register('positions', employee_views.PositionViewSet, base_name='position')
+router.register('position-history', employee_views.PositionHistoryViewSet, base_name='position-history')
+router.register('reviews', employee_views.ReviewViewSet)
 
 
 # Root API for 
@@ -41,7 +42,6 @@ class EmployeeRootView(APIView):
 
 
 employee_root_view = EmployeeRootView.as_view()
-
 
 
 urlpatterns = [
