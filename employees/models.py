@@ -64,9 +64,27 @@ class Profile(models.Model):
 
 
 class Position(models.Model):
+    FRONTEND_DEV = ('Front-end Developer', 'Front-end Developer')
+    BACKEND_DEV = ('Back-end Developer', 'Back-end Developer')
+    PROJECT_MANAGER = ('Project Manager', 'Project Manager')
+    
+    NAME_TYPES = (
+        FRONTEND_DEV,
+        BACKEND_DEV,
+        PROJECT_MANAGER
+    )
+    
+    JUNIOR = ('Junior', 'Junior')
+    SENIOR = ('Senior', 'Senior')
+
+    LEVEL_TYPES = (
+        JUNIOR, 
+        SENIOR
+    )
+
     user = models.ForeignKey(auth_models.User, on_delete=models.SET_NULL, related_name='positions', null=True)
-    name = models.CharField(max_length=10, null=True)
-    level = models.CharField(max_length=10, null=True)
+    name = models.CharField(max_length=10, null=True, choices=NAME_TYPES)
+    level = models.CharField(max_length=10, null=True, choices=LEVEL_TYPES)
 
     @property
     def is_current(self) -> bool:
@@ -80,3 +98,7 @@ class Position(models.Model):
                     )
         
         return self == positions.first()
+
+
+class Review(models.Model):
+    pass

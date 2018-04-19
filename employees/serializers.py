@@ -3,6 +3,9 @@ from employees import models as employee_models
 from accounts import serializers as account_serializers
 
 
+
+
+
 class PositionSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = employee_models.Position
