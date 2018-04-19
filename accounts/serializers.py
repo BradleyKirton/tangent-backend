@@ -3,6 +3,8 @@ from rest_framework import serializers
 
 
 class UserSerializer(serializers.ModelSerializer):
+	url = serializers.HyperlinkedIdentityField(view_name='accounts:user-detail')
+
 	class Meta:
 		model = auth_models.User
 		fields = (
@@ -12,14 +14,20 @@ class UserSerializer(serializers.ModelSerializer):
 			'first_name',
 			'last_name',
 			'is_active',
-			'is_staff'
+			'is_staff',
+			'url'
 		)
+
+		read_only_fields = ('is_active', )
 
 
 class GroupSerializer(serializers.ModelSerializer):
+	url = serializers.HyperlinkedIdentityField(view_name='accounts:group-detail')
+
 	class Meta:
 		model = auth_models.Group
 		fields = (
 			'id',
-			'name'
+			'name',
+			'url'
 		)
