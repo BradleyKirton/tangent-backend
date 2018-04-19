@@ -127,3 +127,16 @@ class PositionHistory(models.Model):
 
     def __str__(self) -> str:
         return f"{self.profile.user.username} {self.position.name}"
+
+    @property
+    def is_current(self) -> bool:
+        """We define the current position as the most recent database entry
+        for the user. This is a simple mechanism and could be enhanced with proper versioning
+        """
+        positions = (Position
+                        .objects
+                        .filter(pk=self.pk)
+                        .order_by('-id')
+                    )
+        
+        return self == positions.first()

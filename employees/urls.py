@@ -17,7 +17,7 @@ router = DefaultRouter()
 
 router.register('profiles', employee_views.ProfileViewSet)
 router.register('positions', employee_views.PositionViewSet)
-router.register('position_history', employee_views.PositionHistoryViewSet)
+router.register('position_history', employee_views.PositionHistoryViewSet, base_name='position-history')
 
 
 # Root API for 

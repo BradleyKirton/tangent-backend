@@ -3,32 +3,38 @@ from employees import models as employee_models
 from accounts import serializers as account_serializers
 
 
-class PositionSerializer(serializers.ModelSerializer):
+class PositionSerializer(serializers.HyperlinkedModelSerializer):
+	url = serializers.HyperlinkedIdentityField(view_name='employees:position-detail')
+	
 	class Meta:
 		model = employee_models.Position
 		fields = (
 			'id',
 			'name',
 			'level',
-			'market_salary'
+			'url'
 		)
 
 
-class PositionHistorySerializer(serializers.ModelSerializer):
-	
+class PositionHistorySerializer(serializers.HyperlinkedModelSerializer):
+	url = serializers.HyperlinkedIdentityField(view_name='employees:position-history-detail')
+	position = PositionSerializer(read_only=True)
+
 	class Meta:
 		model = employee_models.PositionHistory
 		fields = (
 			'id',
-    		'employee',
     		'position',
-    		'date_started'
+    		'date_started',
+    		'is_current',
+    		'url'
 		)
 
 
-class ProfileSerializer(serializers.ModelSerializer):
+class ProfileSerializer(serializers.HyperlinkedModelSerializer):
+	url = serializers.HyperlinkedIdentityField(view_name='employees:profile-detail')
 	user = account_serializers.UserSerializer(read_only=True)
-	positions = PositionSerializer(many=True)
+	positions = PositionHistorySerializer(many=True, read_only=True)
 
 	class Meta:
 		model = employee_models.Profile
@@ -45,5 +51,6 @@ class ProfileSerializer(serializers.ModelSerializer):
 			'age',
 			'years_worked',
 			'days_to_birthday',
-			'positions'
+			'positions',
+			'url'
 		)
