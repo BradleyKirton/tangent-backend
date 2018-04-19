@@ -27,6 +27,9 @@ class Position(models.Model):
     level = models.CharField(max_length=10, null=True, choices=LEVEL_TYPES)
     market_salary = models.FloatField(null=True)
 
+    def __str__(self) -> str:
+        return f"{self.name} - {self.level}"
+
 
 class Profile(models.Model):
     GENDER_TYPES = (
@@ -86,6 +89,9 @@ class Profile(models.Model):
         delta = now - this_years_bday
         return delta.days
 
+    def __str__(self) -> str:
+        return f"{self.user.username}"
+
 
 class Review(models.Model):
     PERFORMACE_INCREASE = ('P', 'Performance Increase')
@@ -104,9 +110,15 @@ class Review(models.Model):
     salary = models.FloatField(null=False)
     review_type = models.CharField(max_length=1, null=False, choices=REVIEW_TYPES)
 
+    def __str__(self) -> str:
+        return f"{self.review_date}"
+
 
 class PositionHistory(models.Model):
     employee = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True)
     date_started = models.DateField(auto_now_add=True)
     review = models.ManyToManyField(Review)
+
+    def __str__(self) -> str:
+        return f"{self.employee.user.username} {self.position.name}"
