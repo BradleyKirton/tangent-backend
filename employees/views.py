@@ -11,3 +11,8 @@ class ProfileViewSet(viewsets.ModelViewSet):
 class PositionViewSet(viewsets.ModelViewSet):
 	queryset = employee_models.Position.objects.all()
 	serializer_class = employee_serializers.PositionSerializer
+
+
+class PositionHistoryViewSet(viewsets.ModelViewSet):
+	queryset = employee_models.PositionHistory.objects.all()
+	serializer_class = employee_serializers.PositionHistorySerializer

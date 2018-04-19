@@ -4,6 +4,29 @@ from django.db import models
 from django.contrib.auth import models as auth_models
 
 
+class Position(models.Model):
+    FRONTEND_DEV = ('Front-end Developer', 'Front-end Developer')
+    BACKEND_DEV = ('Back-end Developer', 'Back-end Developer')
+    PROJECT_MANAGER = ('Project Manager', 'Project Manager')
+    
+    NAME_TYPES = (
+        FRONTEND_DEV,
+        BACKEND_DEV,
+        PROJECT_MANAGER
+    )
+    
+    JUNIOR = ('Junior', 'Junior')
+    SENIOR = ('Senior', 'Senior')
+
+    LEVEL_TYPES = (
+        JUNIOR, 
+        SENIOR
+    )
+
+    name = models.CharField(max_length=10, null=True, choices=NAME_TYPES)
+    level = models.CharField(max_length=10, null=True, choices=LEVEL_TYPES)
+    market_salary = models.FloatField(null=True)
+
 
 class Profile(models.Model):
     GENDER_TYPES = (
@@ -33,7 +56,8 @@ class Profile(models.Model):
     date_started = models.DateField(auto_now_add=True, null=True)
     gender = models.CharField(max_length=1, choices=GENDER_TYPES, null=True)
     race = models.CharField(max_length=1, choices=RACE_TYPES, null=True)
-    
+    positions = models.ManyToManyField(Position, through='PositionHistory')
+
     @property
     def age(self) -> int:
         if self.birth_date is None:
@@ -63,42 +87,26 @@ class Profile(models.Model):
         return delta.days
 
 
-class Position(models.Model):
-    FRONTEND_DEV = ('Front-end Developer', 'Front-end Developer')
-    BACKEND_DEV = ('Back-end Developer', 'Back-end Developer')
-    PROJECT_MANAGER = ('Project Manager', 'Project Manager')
-    
-    NAME_TYPES = (
-        FRONTEND_DEV,
-        BACKEND_DEV,
-        PROJECT_MANAGER
-    )
-    
-    JUNIOR = ('Junior', 'Junior')
-    SENIOR = ('Senior', 'Senior')
-
-    LEVEL_TYPES = (
-        JUNIOR, 
-        SENIOR
-    )
-
-    user = models.ForeignKey(auth_models.User, on_delete=models.SET_NULL, related_name='positions', null=True)
-    name = models.CharField(max_length=10, null=True, choices=NAME_TYPES)
-    level = models.CharField(max_length=10, null=True, choices=LEVEL_TYPES)
-
-    @property
-    def is_current(self) -> bool:
-        """We define the current position as the most recent database entry
-        for the user. This is a simple mechanism and could be enhanced with proper versioning
-        """
-        positions = (Position
-                        .objects
-                        .filter(pk=self.pk)
-                        .order_by('-id')
-                    )
-        
-        return self == positions.first()
-
-
 class Review(models.Model):
-    pass
+    PERFORMACE_INCREASE = ('P', 'Performance Increase')
+    STARTING_SALARY = ('S', 'Starting Salary')
+    ANNUAL_INCREASE = ('A', 'Annual Increase')
+    EXPECTATION_REVIEW = ('E', 'Expectation Review')
+
+    REVIEW_TYPES = (
+        PERFORMACE_INCREASE,
+        STARTING_SALARY,
+        ANNUAL_INCREASE,
+        EXPECTATION_REVIEW
+    )
+
+    review_date = models.DateField(auto_now_add=True)
+    salary = models.FloatField(null=False)
+    review_type = models.CharField(max_length=1, null=False, choices=REVIEW_TYPES)
+
+
+class PositionHistory(models.Model):
+    employee = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
+    position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True)
+    date_started = models.DateField(auto_now_add=True)
+    review = models.ManyToManyField(Review)

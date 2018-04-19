@@ -18,4 +18,4 @@ def post_user_save(sender: object, instance: auth_models.User, created: bool, **
 		return
 
 	employee_models.Profile.objects.create(user=instance)
-	employee_models.Position.objects.create(user=instance)
+	# employee_models.Position.objects.create(user=instance)

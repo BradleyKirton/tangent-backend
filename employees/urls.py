@@ -15,8 +15,9 @@ app_name = 'employees'
 # Setup a router for the viewsets
 router = DefaultRouter()
 
-router.register('profile', employee_views.ProfileViewSet)
-router.register('position', employee_views.PositionViewSet)
+router.register('profiles', employee_views.ProfileViewSet)
+router.register('positions', employee_views.PositionViewSet)
+router.register('position_history', employee_views.PositionHistoryViewSet)
 
 
 # Root API for 
