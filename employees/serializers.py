@@ -86,7 +86,6 @@ class ProfileSerializer(serializers.HyperlinkedModelSerializer):
 			'id',
 			'user',
 			'phone_number',
-			'email',
 			'github_user',
 			'birth_date',
 			'date_started',

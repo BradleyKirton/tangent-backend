@@ -58,7 +58,6 @@ class Profile(models.Model):
     )
     
     phone_number = models.CharField(max_length=10, null=True)
-    email = models.EmailField(null=True)
     github_user = models.CharField(max_length=255, null=True)
     birth_date = models.DateField(null=True)
     date_started = models.DateField(auto_now_add=True, null=True)
@@ -68,6 +67,7 @@ class Profile(models.Model):
 
     @property
     def age(self) -> int:
+        """Computes the age given the birth_day field"""
         if self.birth_date is None:
             return
 
@@ -76,23 +76,47 @@ class Profile(models.Model):
 
     @property
     def years_worked(self) -> int:
-        delta = datetime.date.now() - self.date_started
+        """Computes the years worked"""
+        delta = datetime.date.today() - self.date_started
         return delta.days // 365
         
 
     @property
     def days_to_birthday(self) -> int:
+        """Computes the number of days to the instance's birthday"""
         if self.birth_date is None:
             return
 
-        now = datetime.date.now()
-        this_years_bday = self.birth_date.replace(year=now.year)
+        return self._calculate_days_to_birthday(
+            self.birth_date, 
+            datetime.date.today()
+        )
 
-        if self.birth_date.month < now.month:
-            now = now.replace(year=now.year + 1)
-        
-        delta = now - this_years_bday
-        return delta.days
+    @staticmethod
+    def _calculate_days_to_birthday(birthday, today) -> int:
+        """Calculates the number of days between the specified birthday
+        and the current_date. Both inputs are specifiable by the user and
+        the number of days are for the current or next year.
+
+        Args:
+            birthday: A birth date
+            current_date: A date to compare the birth date to
+
+        Returns:
+            The number of days
+        """
+        if birthday.month == today.month:
+            if birthday.day < today.day:
+                next_birthday = birthday.replace(year=today.year + 1)
+            else:
+                next_birthday = birthday.replace(year=today.year)
+
+        elif birthday.month < today.month:
+            next_birthday = birthday.replace(year=today.year + 1)
+        else:
+            next_birthday = birthday.replace(year=today.year)
+
+        return (next_birthday - today).days
 
     def __str__(self) -> str:
         return f"{self.user.username}"
