@@ -53,7 +53,7 @@ class Profile(models.Model):
     user = models.OneToOneField(
         auth_models.User, 
         on_delete=models.SET_NULL, 
-        related_name='employee_profile', 
+        related_name='profile', 
         null=True
     )
     
@@ -183,7 +183,7 @@ class Review(models.Model):
         EXPECTATION_REVIEW
     )
 
-    review_date = models.DateField(auto_now_add=True)
+    review_date = models.DateField(default=datetime.date.today)
     salary = models.FloatField(null=False)
     review_type = models.CharField(max_length=1, null=False, choices=REVIEW_TYPES)
 
@@ -194,7 +194,7 @@ class Review(models.Model):
 class PositionHistory(models.Model):
     profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
     position = models.ForeignKey(Position, on_delete=models.SET_NULL, null=True)
-    review = models.ManyToManyField(Review)
+    reviews = models.ManyToManyField(Review, related_name='positions')
     date_started = models.DateField(auto_now_add=True)
 
     def __str__(self) -> str:

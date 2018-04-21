@@ -19,6 +19,7 @@ class PositionSerializer(serializers.HyperlinkedModelSerializer):
 
 class ReviewSerializer(serializers.HyperlinkedModelSerializer):
 	url = serializers.HyperlinkedIdentityField(view_name='employees:review-detail')
+	position = serializers.SlugRelatedField(slug_field='name', source='positions.position', read_only=True)
 
 	class Meta:
 		model = employee_models.Review
@@ -27,15 +28,29 @@ class ReviewSerializer(serializers.HyperlinkedModelSerializer):
     		'review_date',
     		'salary',
     		'review_type',
+    		'position',
 			'url'
 		)
 
 
 class PositionHistorySerializer(serializers.HyperlinkedModelSerializer):
 	url = serializers.HyperlinkedIdentityField(view_name='employees:position-history-detail')
+	username = serializers.SlugRelatedField(slug_field='username', source='profile.user', read_only=True)
 	position = PositionSerializer(read_only=True)
-	review = ReviewSerializer(many=True, read_only=True)
+	reviews = ReviewSerializer(many=True, read_only=True)
 	add_review = serializers.SerializerMethodField()
+	profile = serializers.SerializerMethodField()
+
+	def get_profile(self, instance) -> str:
+		"""Returns the full uri for the add review detail route
+
+		Args:
+		    instance: A profile instance
+
+		Returns:
+		    A URI string
+		"""
+		return reverse('employees:profile-detail', kwargs={'pk': instance.profile.pk}, request=self.context['request'])
 
 	def get_add_review(self, instance) -> str:
 		"""Returns the full uri for the add review detail route
@@ -46,17 +61,19 @@ class PositionHistorySerializer(serializers.HyperlinkedModelSerializer):
 		Returns:
 		    A URI string
 		"""
-		return reverse('employees:review-add-review', kwargs={'pk': instance.pk}, request=self.context['request'])
+		return reverse('employees:position-history-add-review', kwargs={'pk': instance.pk}, request=self.context['request'])
 
 	class Meta:
 		model = employee_models.PositionHistory
 		fields = (
 			'id',
+			'username',
     		'position',
-    		'review',
+    		'reviews',
     		'date_started',
     		'is_current',
     		'add_review',
+    		'profile',
     		'url'
 		)
 
