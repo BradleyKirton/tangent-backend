@@ -89,3 +89,13 @@ class UserTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 1)
         self.assertEqual(response.data[0]['id'], user.pk)
+
+
+    def test_current_user_resource(self):
+        user, created = get_or_create_user(is_admin=False)
+        self.client.force_authenticate(user)
+
+        url = reverse('accounts:user-me')
+        response = self.client.get(url, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIsInstance(response.data, dict)
