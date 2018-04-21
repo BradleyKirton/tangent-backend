@@ -7,6 +7,7 @@ from accounts import filters as account_filters
 
 
 class UserViewSet(viewsets.ModelViewSet):
+	"""This view presents lists of users. The view is read only for non admin users"""
 	queryset = auth_models.User.objects.all()
 	serializer_class = account_serializers.UserSerializer
 	permission_classes = (account_permissions.IsAdminUserOrReadOnly, )
@@ -14,6 +15,7 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
+	"""This view presents lists of groups. The view is not accessible for non admin users"""
 	queryset = auth_models.Group.objects.all()
 	serializer_class = account_serializers.GroupSerializer
 	permission_classes = (permissions.IsAdminUser, )
