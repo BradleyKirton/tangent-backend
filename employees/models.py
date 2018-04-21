@@ -62,6 +62,7 @@ class Profile(models.Model):
     birth_date = models.DateField(null=True)
     date_started = models.DateField(auto_now_add=True, null=True)
     gender = models.CharField(max_length=1, choices=GENDER_TYPES, null=True)
+    about_me = models.TextField(null=True)
     race = models.CharField(max_length=1, choices=RACE_TYPES, null=True)
     positions = models.ManyToManyField(Position, through='PositionHistory')
 

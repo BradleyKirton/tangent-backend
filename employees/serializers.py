@@ -111,6 +111,7 @@ class ProfileSerializer(serializers.HyperlinkedModelSerializer):
 			'age',
 			'years_worked',
 			'days_to_birthday',
+			'about_me',
 			'positions',
 			'add_position',
 			'url'
