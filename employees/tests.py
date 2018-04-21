@@ -77,3 +77,28 @@ class ProfileModelTest(TestCase):
 
 		years = employee_models.Profile._calculate_age(birthday, today)
 		self.assertEqual(years, 30)
+
+	def test_years_worked(self):
+		date_started = datetime.date(2018, 2, 18)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_years_worked(date_started, today)
+		self.assertEqual(years, 0)
+
+		date_started = datetime.date(2017, 2, 18)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_years_worked(date_started, today)
+		self.assertEqual(years, 1)
+
+		date_started = datetime.date(2016, 2, 18)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_years_worked(date_started, today)
+		self.assertEqual(years, 2)
+
+		date_started = datetime.date(2019, 2, 18)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_years_worked(date_started, today)
+		self.assertEqual(years, None)

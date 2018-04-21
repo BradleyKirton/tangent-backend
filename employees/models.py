@@ -71,15 +71,21 @@ class Profile(models.Model):
         if self.birth_date is None:
             return
 
-        delta = datetime.date.today() - self.birth_date
-        return delta.days // 365
+        return self._calculate_age(
+            self.birth_date,
+            datetime.date.today()
+        )
 
     @property
     def years_worked(self) -> int:
         """Computes the years worked"""
-        delta = datetime.date.today() - self.date_started
-        return delta.days // 365
-        
+        if self.date_started is None:
+            return
+
+        return self._calculate_age(
+            self.date_started,
+            datetime.date.today()
+        )
 
     @property
     def days_to_birthday(self) -> int:
@@ -118,6 +124,8 @@ class Profile(models.Model):
         worked given the date they starting working
         and a value of today.
 
+        If the date started is future dated, the function will return None
+
         Args:
             date_started: The date the employee started
             current_date: A date to compare the date started to
@@ -125,7 +133,12 @@ class Profile(models.Model):
         Returns:
             The number of years
         """
-        pass
+        years = (today - date_started).days // 365
+
+        if years < 0:
+            return
+
+        return years
 
     @staticmethod
     def _calculate_days_to_birthday(birthday, today) -> int:
