@@ -58,3 +58,22 @@ class ProfileModelTest(TestCase):
 		
 		days = employee_models.Profile._calculate_days_to_birthday(birthday, today)
 		self.assertEqual(days, 0)
+
+	def test_age(self):
+		birthday = datetime.date(1986, 2, 18)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_age(birthday, today)
+		self.assertEqual(years, 32)
+
+		birthday = datetime.date(1988, 9, 3)
+		today = datetime.date(2018, 4, 21)
+
+		years = employee_models.Profile._calculate_age(birthday, today)
+		self.assertEqual(years, 29)
+
+		birthday = datetime.date(1988, 9, 3)
+		today = datetime.date(2018, 9, 3)
+
+		years = employee_models.Profile._calculate_age(birthday, today)
+		self.assertEqual(years, 30)

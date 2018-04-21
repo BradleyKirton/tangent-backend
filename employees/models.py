@@ -93,6 +93,41 @@ class Profile(models.Model):
         )
 
     @staticmethod
+    def _calculate_age(birthday, today) -> int:
+        """Calculates the employee's age in years given their birthday
+        and a value of today.
+
+        Args:
+            birthday: A birth date
+            current_date: A date to compare the birth date to
+
+        Returns:
+            The number of years
+        """
+        years = today.year - birthday.year
+        if today.month == birthday.month and today.day < birthday.day:
+            years -= 1
+        elif today.month < birthday.month:
+            years -= 1
+        
+        return years
+
+    @staticmethod
+    def _calculate_years_worked(date_started, today) -> int:
+        """Calculates the number of years an employee has
+        worked given the date they starting working
+        and a value of today.
+
+        Args:
+            date_started: The date the employee started
+            current_date: A date to compare the date started to
+
+        Returns:
+            The number of years
+        """
+        pass
+
+    @staticmethod
     def _calculate_days_to_birthday(birthday, today) -> int:
         """Calculates the number of days between the specified birthday
         and the current_date. Both inputs are specifiable by the user and
