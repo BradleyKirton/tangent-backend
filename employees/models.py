@@ -64,6 +64,7 @@ class Profile(models.Model):
     gender = models.CharField(max_length=1, choices=GENDER_TYPES, null=True)
     about_me = models.TextField(null=True)
     race = models.CharField(max_length=1, choices=RACE_TYPES, null=True)
+    picture_uri = models.CharField(max_length=255, null=True)
     positions = models.ManyToManyField(Position, through='PositionHistory')
 
     @property
