@@ -168,7 +168,10 @@ class Profile(models.Model):
         return (next_birthday - today).days
 
     def __str__(self) -> str:
-        return f"{self.user.username}"
+        if self.user is not None:
+            return f"{self.user.username}"
+
+        return f"{self.__class__}"
 
 
 class Review(models.Model):
