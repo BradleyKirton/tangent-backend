@@ -192,54 +192,54 @@
    "model": "auth.permission",
    "pk": 22,
    "fields": {
-      "name": "Can add employee",
+      "name": "Can add position",
       "content_type": 8,
-      "codename": "add_employee"
+      "codename": "add_position"
    }
 },
 {
    "model": "auth.permission",
    "pk": 23,
    "fields": {
-      "name": "Can change employee",
+      "name": "Can change position",
       "content_type": 8,
-      "codename": "change_employee"
+      "codename": "change_position"
    }
 },
 {
    "model": "auth.permission",
    "pk": 24,
    "fields": {
-      "name": "Can delete employee",
+      "name": "Can delete position",
       "content_type": 8,
-      "codename": "delete_employee"
+      "codename": "delete_position"
    }
 },
 {
    "model": "auth.permission",
    "pk": 25,
    "fields": {
-      "name": "Can add employee profile",
+      "name": "Can add position history",
       "content_type": 9,
-      "codename": "add_employeeprofile"
+      "codename": "add_positionhistory"
    }
 },
 {
    "model": "auth.permission",
    "pk": 26,
    "fields": {
-      "name": "Can change employee profile",
+      "name": "Can change position history",
       "content_type": 9,
-      "codename": "change_employeeprofile"
+      "codename": "change_positionhistory"
    }
 },
 {
    "model": "auth.permission",
    "pk": 27,
    "fields": {
-      "name": "Can delete employee profile",
+      "name": "Can delete position history",
       "content_type": 9,
-      "codename": "delete_employeeprofile"
+      "codename": "delete_positionhistory"
    }
 },
 {
@@ -247,7 +247,7 @@
    "pk": 28,
    "fields": {
       "name": "Can add profile",
-      "content_type": 9,
+      "content_type": 10,
       "codename": "add_profile"
    }
 },
@@ -256,7 +256,7 @@
    "pk": 29,
    "fields": {
       "name": "Can change profile",
-      "content_type": 9,
+      "content_type": 10,
       "codename": "change_profile"
    }
 },
@@ -265,7 +265,7 @@
    "pk": 30,
    "fields": {
       "name": "Can delete profile",
-      "content_type": 9,
+      "content_type": 10,
       "codename": "delete_profile"
    }
 },
@@ -273,68 +273,32 @@
    "model": "auth.permission",
    "pk": 31,
    "fields": {
-      "name": "Can add position",
-      "content_type": 10,
-      "codename": "add_position"
+      "name": "Can add review",
+      "content_type": 11,
+      "codename": "add_review"
    }
 },
 {
    "model": "auth.permission",
    "pk": 32,
    "fields": {
-      "name": "Can change position",
-      "content_type": 10,
-      "codename": "change_position"
+      "name": "Can change review",
+      "content_type": 11,
+      "codename": "change_review"
    }
 },
 {
    "model": "auth.permission",
    "pk": 33,
    "fields": {
-      "name": "Can delete position",
-      "content_type": 10,
-      "codename": "delete_position"
+      "name": "Can delete review",
+      "content_type": 11,
+      "codename": "delete_review"
    }
 },
 {
    "model": "auth.user",
-   "pk": 1,
-   "fields": {
-      "password": "pbkdf2_sha256$100000$k8pv7HRNCJVH$zDFf5UG3IiXkSXpkzYFijJbYQiHQvYCsRHi9t6twb60=",
-      "last_login": "2018-04-18T18:38:33.401Z",
-      "is_superuser": true,
-      "username": "admin",
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2018-04-17T15:46:35.234Z",
-      "groups": [],
-      "user_permissions": []
-   }
-},
-{
-   "model": "auth.user",
-   "pk": 2,
-   "fields": {
-      "password": "pbkdf2_sha256$100000$E7ggMjhSkyR4$hJM/9YNwYdgyrLxldod4atgUL0dPyJ9WIYPON9+w4U4=",
-      "last_login": "2018-04-18T15:38:13.417Z",
-      "is_superuser": false,
-      "username": "bradleyk",
-      "first_name": "Bradley",
-      "last_name": "Kirton",
-      "email": "bradleykirton@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2018-04-17T18:16:48Z",
-      "groups": [],
-      "user_permissions": []
-   }
-},
-{
-   "model": "auth.user",
-   "pk": 7,
+   "pk": 53,
    "fields": {
       "password": "",
       "last_login": null,
@@ -345,14 +309,14 @@
       "email": "lhillan0@paypal.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:43:12.786Z",
+      "date_joined": "2018-04-23T16:32:02.534Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 8,
+   "pk": 54,
    "fields": {
       "password": "",
       "last_login": null,
@@ -363,14 +327,14 @@
       "email": "mscamadin1@g.co",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.042Z",
+      "date_joined": "2018-04-23T16:32:02.544Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 9,
+   "pk": 55,
    "fields": {
       "password": "",
       "last_login": null,
@@ -381,14 +345,14 @@
       "email": "ejone2@4shared.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.051Z",
+      "date_joined": "2018-04-23T16:32:02.551Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 10,
+   "pk": 56,
    "fields": {
       "password": "",
       "last_login": null,
@@ -399,14 +363,14 @@
       "email": "jcausbey3@uiuc.edu",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.057Z",
+      "date_joined": "2018-04-23T16:32:02.558Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 11,
+   "pk": 57,
    "fields": {
       "password": "",
       "last_login": null,
@@ -417,14 +381,14 @@
       "email": "cviggers4@live.com",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.064Z",
+      "date_joined": "2018-04-23T16:32:02.565Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 12,
+   "pk": 58,
    "fields": {
       "password": "",
       "last_login": null,
@@ -435,14 +399,14 @@
       "email": "sadolf5@yandex.ru",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.070Z",
+      "date_joined": "2018-04-23T16:32:02.573Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 13,
+   "pk": 59,
    "fields": {
       "password": "",
       "last_login": null,
@@ -453,14 +417,14 @@
       "email": "fworsalls6@bizjournals.com",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.077Z",
+      "date_joined": "2018-04-23T16:32:02.579Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 14,
+   "pk": 60,
    "fields": {
       "password": "",
       "last_login": null,
@@ -471,14 +435,14 @@
       "email": "lhentzer7@xrea.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.083Z",
+      "date_joined": "2018-04-23T16:32:02.585Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 15,
+   "pk": 61,
    "fields": {
       "password": "",
       "last_login": null,
@@ -489,14 +453,14 @@
       "email": "oferrao8@comcast.net",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.092Z",
+      "date_joined": "2018-04-23T16:32:02.591Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 16,
+   "pk": 62,
    "fields": {
       "password": "",
       "last_login": null,
@@ -507,14 +471,14 @@
       "email": "bbatchelar9@tinyurl.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.098Z",
+      "date_joined": "2018-04-23T16:32:02.598Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 17,
+   "pk": 63,
    "fields": {
       "password": "",
       "last_login": null,
@@ -525,14 +489,14 @@
       "email": "jsoutena@t-online.de",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.104Z",
+      "date_joined": "2018-04-23T16:32:02.604Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 18,
+   "pk": 64,
    "fields": {
       "password": "",
       "last_login": null,
@@ -543,14 +507,14 @@
       "email": "ecourtmanb@yale.edu",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.111Z",
+      "date_joined": "2018-04-23T16:32:02.611Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 19,
+   "pk": 65,
    "fields": {
       "password": "",
       "last_login": null,
@@ -561,14 +525,14 @@
       "email": "adodsleyc@furl.net",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.117Z",
+      "date_joined": "2018-04-23T16:32:02.618Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 20,
+   "pk": 66,
    "fields": {
       "password": "",
       "last_login": null,
@@ -579,14 +543,14 @@
       "email": "seliad@time.com",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.123Z",
+      "date_joined": "2018-04-23T16:32:02.625Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 21,
+   "pk": 67,
    "fields": {
       "password": "",
       "last_login": null,
@@ -597,14 +561,14 @@
       "email": "rautone@huffingtonpost.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.130Z",
+      "date_joined": "2018-04-23T16:32:02.632Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 22,
+   "pk": 68,
    "fields": {
       "password": "",
       "last_login": null,
@@ -615,14 +579,14 @@
       "email": "alilburnef@purevolume.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.136Z",
+      "date_joined": "2018-04-23T16:32:02.640Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 23,
+   "pk": 69,
    "fields": {
       "password": "",
       "last_login": null,
@@ -633,14 +597,14 @@
       "email": "ginottg@house.gov",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.142Z",
+      "date_joined": "2018-04-23T16:32:02.647Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 24,
+   "pk": 70,
    "fields": {
       "password": "",
       "last_login": null,
@@ -651,14 +615,14 @@
       "email": "eonearyh@geocities.jp",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.149Z",
+      "date_joined": "2018-04-23T16:32:02.655Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 25,
+   "pk": 71,
    "fields": {
       "password": "",
       "last_login": null,
@@ -669,14 +633,14 @@
       "email": "vbucheri@weather.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.155Z",
+      "date_joined": "2018-04-23T16:32:02.664Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 26,
+   "pk": 72,
    "fields": {
       "password": "",
       "last_login": null,
@@ -687,14 +651,14 @@
       "email": "dnoyesj@zdnet.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.162Z",
+      "date_joined": "2018-04-23T16:32:02.670Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 27,
+   "pk": 73,
    "fields": {
       "password": "",
       "last_login": null,
@@ -705,14 +669,14 @@
       "email": "zsisselk@flickr.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.168Z",
+      "date_joined": "2018-04-23T16:32:02.676Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 28,
+   "pk": 74,
    "fields": {
       "password": "",
       "last_login": null,
@@ -723,14 +687,14 @@
       "email": "csauvenl@netscape.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.174Z",
+      "date_joined": "2018-04-23T16:32:02.682Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 29,
+   "pk": 75,
    "fields": {
       "password": "",
       "last_login": null,
@@ -741,14 +705,14 @@
       "email": "araffanm@imageshack.us",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.181Z",
+      "date_joined": "2018-04-23T16:32:02.688Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 30,
+   "pk": 76,
    "fields": {
       "password": "",
       "last_login": null,
@@ -759,14 +723,14 @@
       "email": "lworvelln@twitter.com",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2018-04-18T18:46:24.187Z",
+      "date_joined": "2018-04-23T16:32:02.693Z",
       "groups": [],
       "user_permissions": []
    }
 },
 {
    "model": "auth.user",
-   "pk": 31,
+   "pk": 77,
    "fields": {
       "password": "",
       "last_login": null,
@@ -777,7 +741,25 @@
       "email": "rrubinfeldo@sphinn.com",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "2018-04-18T18:46:24.193Z",
+      "date_joined": "2018-04-23T16:32:02.699Z",
+      "groups": [],
+      "user_permissions": []
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 78,
+   "fields": {
+      "password": "pbkdf2_sha256$100000$HP1pcNBruMBq$cJSXhUrA37gvEa0itx5i7v8UoGTJUfN9P1DQr++QW+4=",
+      "last_login": "2018-04-23T16:32:31.204Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-04-23T16:32:21.338Z",
       "groups": [],
       "user_permissions": []
    }
