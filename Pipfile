@@ -10,6 +10,7 @@ django-cors-headers = "*"
 coreapi = "*"
 ipython = "*"
 django-filter = "*"
+channels = "*"
 
 [dev-packages]
 jupyterlab = "*"

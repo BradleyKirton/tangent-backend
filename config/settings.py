@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'accounts',
-    'employees'
+    'employees',
+    'channels'
 ]
 
 
@@ -95,7 +96,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
+ASGI_APPLICATION = "config.routing.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
